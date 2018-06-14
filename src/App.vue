@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Header? -->
-    <!-- Background "NBB" -->
+    <Background />
     <Home />
     <!-- Nav -->
     <!-- Footer -->
@@ -9,11 +9,13 @@
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import Background from "./components/Background.vue";
+import Home from "./components/Home.vue";
 
 export default {
   name: "app",
   components: {
+    Background,
     Home
   }
 }
@@ -25,6 +27,7 @@ html, body {
   padding: 0;
 }
 body {
+  /* Background image from Toptal Subtle Patterns */
   background-image: url("assets/background/black-Linen.png");
 }
 </style>
