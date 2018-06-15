@@ -1,17 +1,5 @@
 <template>
   <div id="home">
-    <p>Rhythm for the mind</p>
-    <p>Vibes for the mood</p>
-    <p>Music for the soul</p>
+    <!-- <p>A brand new band. We're currently working on some new music, please join our mailing list to get updates!</p> -->
   </div>
 </template>
-
-<style lang="scss" scoped>
-#home {
-  margin-top: 1em;
-  p {
-    margin: 0;
-    line-height: 1.25em;
-  }
-}
-</style>
