@@ -1,19 +1,15 @@
 <template>
   <div id="home">
-    <h1>Hero image goes here</h1>
+    <h3>Home</h3>
   </div>
 </template>
 
-<script>
-export default {
-
-};
-</script>
-
 <style lang="scss">
+@import "../styles/vars";
+
 #home {
-  color: #fff;
-  width: 80%;
+  color: $color-white;
+  width: calc(100% - $page-gutter * 2);
   margin: 0 auto;
 }
 </style>
