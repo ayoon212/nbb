@@ -25,6 +25,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./styles/vars";
+
 html, body {
   margin: 0;
   padding: 0;
@@ -32,5 +34,17 @@ html, body {
 body {
   /* Background image from Toptal Subtle Patterns */
   background-image: url("assets/background/black-Linen.png");
+}
+#app {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  color: $color-white;
+  padding: 0 $page-gutter;
+}
+
+ul.list-plain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 </style>

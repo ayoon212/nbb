@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: initial;
 
   padding: 2em 10%;
   position: absolute;

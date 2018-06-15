@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <ul>
+    <ul class="list-plain">
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/about">About</router-link></li>
       <li><router-link to="/">Media</router-link></li>
@@ -21,14 +21,10 @@ export default {}
   position: absolute;
   right: $page-gutter;
   bottom: $page-gutter;
+  text-align: right;
 
   ul {
-    font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 32px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 
     li {
       padding: 5px 10px;
