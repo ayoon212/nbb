@@ -9,7 +9,7 @@
 
 #home {
   color: $color-white;
-  width: 80%;
+  width: calc(100% - $page-gutter * 2);
   margin: 0 auto;
 }
 </style>

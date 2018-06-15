@@ -19,13 +19,13 @@ export default {}
 
 #nav {
   position: absolute;
-  right: $page-gutter*2;
+  right: $page-gutter;
   bottom: $page-gutter;
 
   ul {
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 32px;
     list-style: none;
     margin: 0;
     padding: 0;

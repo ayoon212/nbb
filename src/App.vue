@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-    <!-- Header? -->
     <Background />
-    <!-- <Home /> -->
-    <router-view />
+    <Record />
     <Nav />
-    <!-- Footer -->
+    <router-view />
   </div>
 </template>
 
@@ -13,13 +11,15 @@
 import Background from "./components/Background.vue";
 import Home from "./components/Home.vue";
 import Nav from "./components/Nav.vue";
+import Record from "./components/Record.vue";
 
 export default {
   name: "app",
   components: {
     Background,
     Home,
-    Nav
+    Nav,
+    Record
   }
 }
 </script>
