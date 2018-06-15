@@ -1,11 +1,11 @@
 <template>
   <div id="nav">
     <ul>
-      <li><a>Home</a></li>
-      <li><a>About</a></li>
-      <li><a>Media</a></li>
-      <li><a>Shows</a></li>
-      <li><a>Contact</a></li>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/about">About</router-link></li>
+      <li><router-link to="/">Media</router-link></li>
+      <li><router-link to="/">Shows</router-link></li>
+      <li><router-link to="/">Contact</router-link></li>
     </ul>
   </div>
 </template>
@@ -23,7 +23,6 @@ export default {}
   bottom: $page-gutter;
 
   ul {
-    color: #fff;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 48px;
@@ -31,10 +30,16 @@ export default {}
     margin: 0;
     padding: 0;
 
-    a {
-      text-decoration: none;
-      &:hover {
-        cursor: pointer;
+    li {
+      padding: 5px 10px;
+      a {
+        color: $color-white;
+        text-decoration: none;
+        transition: color 0.25s ease-out;
+        &:hover {
+          cursor: pointer;
+          color: $color-theme-primary;
+        }
       }
     }
   }

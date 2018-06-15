@@ -1,11 +1,16 @@
 <template>
-  <transition name="bg-fade">
-    <div id="background" v-if="isVisible">
-      <div class="first">N<span>o</span></div>
-      <div class="second">B<span>athroom</span></div>
-      <div class="third">B<span>reaks</span></div>
-    </div>
-  </transition>
+  <div>
+    <!-- SEO? -->
+    <h1 class="hidden">No Bathroom Breaks</h1>
+
+    <transition name="bg-fade">
+      <div id="background" v-if="isVisible">
+        <div class="first">N<span>o</span></div>
+        <div class="second">B<span>athroom</span></div>
+        <div class="third">B<span>reaks</span></div>
+      </div>
+    </transition>
+  </div>
 </template>
 
 <script>
@@ -21,17 +26,23 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/vars";
 
-#background {
-  color: #fff;
-  font-family: "Limelight", sans-serif;
-  font-size: 95px;
+.hidden {
+  display: none;
+}
 
+#background {
   position: absolute;
   left: $page-gutter;
   bottom: $page-gutter;
+
+  > div {
+    color: $color-white;
+    font-family: "Limelight", sans-serif;
+    font-size: 95px;
+  }
 }
 
 .first {

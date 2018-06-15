@@ -1,18 +1,14 @@
 <template>
   <div id="home">
-    <h1>Hero image goes here</h1>
+    <h3>Home</h3>
   </div>
 </template>
 
-<script>
-export default {
-
-};
-</script>
-
 <style lang="scss">
+@import "../styles/vars";
+
 #home {
-  color: #fff;
+  color: $color-white;
   width: 80%;
   margin: 0 auto;
 }

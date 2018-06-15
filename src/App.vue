@@ -2,7 +2,8 @@
   <div id="app">
     <!-- Header? -->
     <Background />
-    <Home />
+    <!-- <Home /> -->
+    <router-view />
     <Nav />
     <!-- Footer -->
   </div>
