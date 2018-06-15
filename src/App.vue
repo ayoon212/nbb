@@ -3,7 +3,9 @@
     <Background />
     <Record />
     <Nav />
-    <router-view />
+    <transition name="fade">
+      <router-view class="content" />
+    </transition>
   </div>
 </template>
 
@@ -25,6 +27,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./styles/vars";
+
 html, body {
   margin: 0;
   padding: 0;
@@ -32,5 +36,47 @@ html, body {
 body {
   /* Background image from Toptal Subtle Patterns */
   background-image: url("assets/background/black-Linen.png");
+}
+#app {
+  font-family: $font-default;
+  font-weight: 300;
+  font-size: 32px;
+  color: $color-white;
+  padding: 0 $page-gutter;
+  ::selection {
+    background: $color-theme-tertiary;
+  }
+}
+.content {
+  font-size: 24px;
+  max-width: 800px;
+  .content-heading {
+    font-weight: 400;
+    font-size: 32px;
+    color: $color-theme-primary;
+    text-transform: uppercase;
+  }
+}
+
+ul.list-plain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ * Animations
+ */
+.fade-enter-active {
+  position: absolute;
+  transition: opacity $transition-duration ease-in;
+}
+.fade-leave-active {
+  position: absolute;
+  transition: opacity $transition-duration ease-out;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
