@@ -3,7 +3,7 @@
     <!-- Header? -->
     <Background />
     <Home />
-    <!-- Nav -->
+    <Nav />
     <!-- Footer -->
   </div>
 </template>
@@ -11,12 +11,14 @@
 <script>
 import Background from "./components/Background.vue";
 import Home from "./components/Home.vue";
+import Nav from "./components/Nav.vue";
 
 export default {
   name: "app",
   components: {
     Background,
-    Home
+    Home,
+    Nav
   }
 }
 </script>

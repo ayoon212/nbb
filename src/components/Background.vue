@@ -22,17 +22,16 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+@import "../styles/vars";
 
 #background {
   color: #fff;
-  font-family: "Playfair Display", serif;
-  font-size: 8em;
-  line-height: 1.25em;
+  font-family: "Limelight", sans-serif;
+  font-size: 95px;
 
   position: absolute;
-  left: 0.5em;
-  bottom: 0.5em;
+  left: $page-gutter;
+  bottom: $page-gutter;
 }
 
 .first {
