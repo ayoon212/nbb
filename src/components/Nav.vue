@@ -3,7 +3,7 @@
     <ul class="list-plain">
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/about">About</router-link></li>
-      <li><router-link to="/">Media</router-link></li>
+      <li><router-link to="/media">Media</router-link></li>
       <li><router-link to="/">Shows</router-link></li>
       <li><router-link to="/">Contact</router-link></li>
     </ul>
@@ -31,7 +31,7 @@ export default {}
       a {
         color: $color-white;
         text-decoration: none;
-        transition: color 0.25s ease-out;
+        transition: color $transition-duration ease-out;
         &:hover {
           cursor: pointer;
           color: $color-theme-primary;

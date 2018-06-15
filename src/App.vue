@@ -3,7 +3,9 @@
     <Background />
     <Record />
     <Nav />
-    <router-view />
+    <transition name="fade">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -46,5 +48,21 @@ ul.list-plain {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+
+/*
+ * Animations
+ */
+.fade-enter-active {
+  position: absolute;
+  transition: opacity $transition-duration ease-in;
+}
+.fade-leave-active {
+  position: absolute;
+  transition: opacity $transition-duration ease-out;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
