@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- Header? -->
+    <Background />
+    <Home />
+    <Nav />
+    <!-- Footer -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Background from "./components/Background.vue";
+import Home from "./components/Home.vue";
+import Nav from "./components/Nav.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Background,
+    Home,
+    Nav
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* Background image from Toptal Subtle Patterns */
+  background-image: url("assets/background/black-Linen.png");
 }
 </style>
