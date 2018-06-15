@@ -1,5 +1,7 @@
 <template>
   <div id="about">
+    <p class="content-heading">About</p>
+    <p>No Bathroom Breaks started in the back of a tour van driving through the lush state of Pennsylvania. A passion project and outlet for expression, NBB blends jazz, hip hop, and rock with chill and reflective vibes. We invite you to listen to the beats and find connection to your own life.</p>
     <p>NBB is:</p>
     <ul class="list-plain">
       <li>Andy Yoon - Guitar</li>

@@ -5,9 +5,12 @@
 
     <transition name="bg-fade">
       <div id="background" v-if="isVisible">
-        <div class="first">N<span>o</span></div>
-        <div class="second">B<span>athroom</span></div>
-        <div class="third">B<span>reaks</span></div>
+        <div class="first">No</div>
+        <div class="second">Bathroom</div>
+        <div>
+          <span class="third">Breaks</span>
+          <span class="fourth location">Long Beach, CA</span>
+        </div>
       </div>
     </transition>
   </div>
@@ -36,17 +39,23 @@ export default {
 #background {
   position: absolute;
   left: $page-gutter;
-  bottom: $page-gutter;
+  bottom: $page-gutter - 15px;
 
   > div {
     color: $color-white;
     font-family: "Limelight", sans-serif;
     font-size: 95px;
   }
+
+  .location {
+    font-family: $font-default;
+    font-size: 24px;
+    margin-left: 5em;
+  }
 }
 
 .first {
-  transition: opacity 1.8s ease 0.25s;
+  transition: opacity 1.8s ease 0.15s;
 }
 .second {
   transition: opacity 2.2s ease 0.5s;
@@ -54,9 +63,17 @@ export default {
 .third {
   transition: opacity 1.6s ease 1s;
 }
+.fourth {
+  display: inline-block;
+  transition: opacity 1s ease-out 1.5s, transform 0.6s ease-out 1.5s;
+}
 .bg-fade-enter .first, .bg-fade-leave-to .first,
 .bg-fade-enter .second, .bg-fade-leave-to .second,
-.bg-fade-enter .third, .bg-fade-leave-to .third {
+.bg-fade-enter .third, .bg-fade-leave-to .third,
+.bg-fade-enter .fourth, .bg-fade-leave-to .fourth {
   opacity: 0;
+}
+.bg-fade-enter .fourth, .bg-fade-leave-to .fourth {
+  transform: translateX(-15%);
 }
 </style>

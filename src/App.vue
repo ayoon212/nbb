@@ -4,7 +4,7 @@
     <Record />
     <Nav />
     <transition name="fade">
-      <router-view />
+      <router-view class="content" />
     </transition>
   </div>
 </template>
@@ -38,10 +38,24 @@ body {
   background-image: url("assets/background/black-Linen.png");
 }
 #app {
-  font-family: "Lato", sans-serif;
+  font-family: $font-default;
+  font-weight: 300;
   font-size: 32px;
   color: $color-white;
   padding: 0 $page-gutter;
+  ::selection {
+    background: $color-theme-tertiary;
+  }
+}
+.content {
+  font-size: 24px;
+  max-width: 800px;
+  .content-heading {
+    font-weight: 400;
+    font-size: 32px;
+    color: $color-theme-primary;
+    text-transform: uppercase;
+  }
 }
 
 ul.list-plain {
