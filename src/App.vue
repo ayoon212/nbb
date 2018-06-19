@@ -47,7 +47,7 @@ body {
     "background nav";
   height: 100%;
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 940px;
   width: 90%;
   padding-bottom: 1.5em !important;
   box-sizing: border-box;
@@ -59,7 +59,6 @@ body {
     width: 80%;
   }
   @media (min-width: $break-laptop) {
-    font-size: $font-size-lg;
     width: 67%;
   }
 

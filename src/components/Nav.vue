@@ -30,8 +30,11 @@ export default {
 
 #nav {
   text-align: right;
-  @media (min-width: $break-phone-md) and (max-width: $break-tablet) {
+  @media (min-width: $break-phone-md) {
     font-size: $font-size-md;
+  }
+  @media (min-width: $break-laptop-lg) {
+    font-size: $font-size-lg;
   }
 
   ul {

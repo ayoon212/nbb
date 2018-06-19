@@ -46,9 +46,6 @@ export default {
     @media (min-width: $break-phone-lg) {
       font-size: $font-size-xl;
     }
-    @media (min-width: $break-laptop) {
-
-    }
     @media (min-width: $break-laptop-lg) {
       font-size: $font-size-huge;
     }
@@ -56,10 +53,12 @@ export default {
 
   .last-row {
     white-space: nowrap;
-    @media (min-width: $break-tablet) {
-    }
     @media (min-width: $break-laptop) {
-      margin-bottom: -15px;
+      /* Align bottom with bottom of nav (different line-heights) */
+      margin-bottom: -10px;
+    }
+    @media (min-width: $break-laptop-lg) {
+      margin-bottom: -20px;
     }
 
     .location {
