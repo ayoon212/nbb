@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Background />
+    <Background class="background" />
     <Record />
-    <Nav />
+    <Nav class="nav" />
     <transition name="fade">
       <router-view class="content" />
     </transition>
@@ -32,29 +32,63 @@ export default {
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 body {
   /* Background image from Toptal Subtle Patterns */
   background-image: url("assets/background/black-Linen.png");
 }
 #app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "content content"
+    "background nav";
+  height: 100%;
+  margin: 0 auto;
+  max-width: 940px;
+  width: 90%;
+  padding-bottom: 1.5em !important;
+  box-sizing: border-box;
   font-family: $font-default;
   font-weight: 300;
-  font-size: 32px;
+  font-size: $font-size-sm;
+  @media (min-width: $break-tablet) {
+    font-size: $font-size-md;
+    width: 80%;
+  }
+  @media (min-width: $break-laptop) {
+    width: 67%;
+  }
+
   color: $color-white;
-  padding: 0 $page-gutter;
+  position: relative;
   ::selection {
     background: $color-theme-tertiary;
   }
-}
-.content {
-  font-size: 24px;
-  max-width: 800px;
-  .content-heading {
-    font-weight: 400;
-    font-size: 32px;
-    color: $color-theme-primary;
-    text-transform: uppercase;
+
+  .background {
+    grid-area: background;
+    overflow: visible;
+    align-self: end;
+  }
+  .nav {
+    grid-area: nav;
+    align-self: end;
+  }
+  .content {
+    grid-area: content;
+    max-width: 800px;
+    .content-heading {
+      color: $color-theme-primary;
+      font-weight: 400;
+      font-size: $font-size-md;
+      text-transform: uppercase;
+      @media (min-width: $break-tablet) {
+        font-size: $font-size-lg;
+      }
+    }
   }
 }
 

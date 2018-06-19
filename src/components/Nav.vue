@@ -29,14 +29,17 @@ export default {
 @import "../styles/vars";
 
 #nav {
-  position: absolute;
-  right: $page-gutter;
-  bottom: $page-gutter;
   text-align: right;
+  @media (min-width: $break-phone-md) {
+    font-size: $font-size-md;
+  }
+  @media (min-width: $break-laptop-lg) {
+    font-size: $font-size-lg;
+  }
 
   ul {
     li {
-      padding: 5px 10px;
+      padding-top: 0.25em;
       a {
         color: $color-white;
         text-decoration: none;

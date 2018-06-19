@@ -7,7 +7,7 @@
       <div id="background" v-if="isVisible">
         <div class="first">No</div>
         <div class="second">Bathroom</div>
-        <div>
+        <div class="last-row">
           <span class="third">Breaks</span>
           <span class="fourth location">Long Beach, CA</span>
         </div>
@@ -37,20 +37,39 @@ export default {
 }
 
 #background {
-  position: absolute;
-  left: $page-gutter;
-  bottom: $page-gutter - 15px;
-
   > div {
     color: $color-white;
     font-family: "Limelight", sans-serif;
-    font-size: 95px;
+  }
+  .first, .second, .third {
+    font-size: $font-size-lg;
+    @media (min-width: $break-phone-lg) {
+      font-size: $font-size-xl;
+    }
+    @media (min-width: $break-laptop-lg) {
+      font-size: $font-size-huge;
+    }
   }
 
-  .location {
-    font-family: $font-default;
-    font-size: 24px;
-    margin-left: 5em;
+  .last-row {
+    white-space: nowrap;
+    @media (min-width: $break-laptop) {
+      /* Align bottom with bottom of nav (different line-heights) */
+      margin-bottom: -10px;
+    }
+    @media (min-width: $break-laptop-lg) {
+      margin-bottom: -20px;
+    }
+
+    .location {
+      display: block;
+      font-family: $font-default;
+
+      @media (min-width: $break-laptop) {
+        display: inline-block;
+        margin-left: 3em;
+      }
+    }
   }
 }
 
