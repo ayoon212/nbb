@@ -39,24 +39,6 @@ body {
   background-image: url("assets/background/black-Linen.png");
 }
 #app {
-  font-family: $font-default;
-  font-weight: 300;
-  font-size: $font-size-sm;
-  padding: 0 5%;
-  @media (min-width: $break-tablet) {
-    font-size: $font-size-md;
-    padding: 0 5%;
-  }
-  @media (min-width: $break-laptop) {
-    font-size: $font-size-lg;
-  }
-
-  color: $color-white;
-  position: relative;
-  ::selection {
-    background: $color-theme-tertiary;
-  }
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -66,14 +48,25 @@ body {
   height: 100%;
   margin: 0 auto;
   max-width: 1040px;
-  width: 100%;
+  width: 90%;
   padding-bottom: 1.5em !important;
   box-sizing: border-box;
+  font-family: $font-default;
+  font-weight: 300;
+  font-size: $font-size-sm;
   @media (min-width: $break-tablet) {
+    font-size: $font-size-md;
     width: 80%;
   }
   @media (min-width: $break-laptop) {
+    font-size: $font-size-lg;
     width: 67%;
+  }
+
+  color: $color-white;
+  position: relative;
+  ::selection {
+    background: $color-theme-tertiary;
   }
 
   .background {
