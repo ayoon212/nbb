@@ -43,22 +43,22 @@ export default {
   }
   .first, .second, .third {
     font-size: $font-size-lg;
-    @media (min-width: 768px) {
+    @media (min-width: $break-phone-lg) {
+      font-size: $font-size-xl;
+    }
+    @media (min-width: $break-laptop) {
 
     }
-    @media (min-width: 1024px) {
-
-    }
-    @media (min-width: 1440px) {
+    @media (min-width: $break-laptop-lg) {
       font-size: $font-size-huge;
     }
   }
 
   .last-row {
     white-space: nowrap;
-    /* Align bottom with bottom of nav (different line-heights) */
-    margin-bottom: 4px;
-    @media (min-width: 768px) {
+    @media (min-width: $break-tablet) {
+    }
+    @media (min-width: $break-laptop) {
       margin-bottom: -15px;
     }
 
@@ -66,7 +66,7 @@ export default {
       display: block;
       font-family: $font-default;
 
-      @media (min-width: 768px) {
+      @media (min-width: $break-laptop) {
         display: inline-block;
         margin-left: 3em;
       }

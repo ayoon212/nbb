@@ -43,9 +43,12 @@ body {
   font-weight: 300;
   font-size: $font-size-sm;
   padding: 0 5%;
-  @media (min-width: 768px) {
-    font-size: $font-size-lg;
+  @media (min-width: $break-tablet) {
+    font-size: $font-size-md;
     padding: 0 5%;
+  }
+  @media (min-width: $break-laptop) {
+    font-size: $font-size-lg;
   }
 
   color: $color-white;
@@ -64,12 +67,12 @@ body {
   margin: 0 auto;
   max-width: 1040px;
   width: 100%;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.5em !important;
   box-sizing: border-box;
-  @media (min-width: 768px) {
+  @media (min-width: $break-tablet) {
     width: 80%;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: $break-laptop) {
     width: 67%;
   }
 
@@ -90,7 +93,7 @@ body {
       font-weight: 400;
       font-size: $font-size-md;
       text-transform: uppercase;
-      @media (min-width: 768px) {
+      @media (min-width: $break-tablet) {
         font-size: $font-size-lg;
       }
     }

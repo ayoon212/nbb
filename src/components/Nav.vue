@@ -30,10 +30,13 @@ export default {
 
 #nav {
   text-align: right;
+  @media (min-width: $break-phone-md) and (max-width: $break-tablet) {
+    font-size: $font-size-md;
+  }
 
   ul {
     li {
-      padding: 5px 10px;
+      padding-top: 0.25em;
       a {
         color: $color-white;
         text-decoration: none;
