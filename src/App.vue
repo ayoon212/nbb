@@ -41,9 +41,14 @@ body {
 #app {
   font-family: $font-default;
   font-weight: 300;
-  font-size: 32px;
+  font-size: $font-size-sm;
+  padding: 0 5%;
+  @media (min-width: 768px) {
+    font-size: $font-size-lg;
+    padding: 0 5%;
+  }
+
   color: $color-white;
-  padding: 0 $page-gutter;
   position: relative;
   ::selection {
     background: $color-theme-tertiary;
@@ -79,13 +84,15 @@ body {
   }
   .content {
     grid-area: content;
-    font-size: 24px;
     max-width: 800px;
     .content-heading {
-      font-weight: 400;
-      font-size: 32px;
       color: $color-theme-primary;
+      font-weight: 400;
+      font-size: $font-size-md;
       text-transform: uppercase;
+      @media (min-width: 768px) {
+        font-size: $font-size-lg;
+      }
     }
   }
 }

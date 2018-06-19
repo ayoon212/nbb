@@ -37,22 +37,40 @@ export default {
 }
 
 #background {
-  .last-row {
-    /* Align bottom with bottom of nav (different line-heights) */
-    margin-bottom: -15px;
-    white-space: nowrap;
-  }
-
   > div {
     color: $color-white;
     font-family: "Limelight", sans-serif;
-    font-size: 95px;
+  }
+  .first, .second, .third {
+    font-size: $font-size-lg;
+    @media (min-width: 768px) {
+
+    }
+    @media (min-width: 1024px) {
+
+    }
+    @media (min-width: 1440px) {
+      font-size: $font-size-huge;
+    }
   }
 
-  .location {
-    font-family: $font-default;
-    font-size: 24px;
-    margin-left: 3em;
+  .last-row {
+    white-space: nowrap;
+    /* Align bottom with bottom of nav (different line-heights) */
+    margin-bottom: 4px;
+    @media (min-width: 768px) {
+      margin-bottom: -15px;
+    }
+
+    .location {
+      display: block;
+      font-family: $font-default;
+
+      @media (min-width: 768px) {
+        display: inline-block;
+        margin-left: 3em;
+      }
+    }
   }
 }
 
