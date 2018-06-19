@@ -7,7 +7,7 @@
       <div id="background" v-if="isVisible">
         <div class="first">No</div>
         <div class="second">Bathroom</div>
-        <div>
+        <div class="last-row">
           <span class="third">Breaks</span>
           <span class="fourth location">Long Beach, CA</span>
         </div>
@@ -37,9 +37,11 @@ export default {
 }
 
 #background {
-  position: absolute;
-  left: $page-gutter;
-  bottom: $page-gutter - 15px;
+  .last-row {
+    /* Align bottom with bottom of nav (different line-heights) */
+    margin-bottom: -15px;
+    white-space: nowrap;
+  }
 
   > div {
     color: $color-white;
@@ -50,7 +52,7 @@ export default {
   .location {
     font-family: $font-default;
     font-size: 24px;
-    margin-left: 5em;
+    margin-left: 3em;
   }
 }
 

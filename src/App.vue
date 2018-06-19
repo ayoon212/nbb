@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Background />
+    <Background class="background" />
     <Record />
-    <Nav />
+    <Nav class="nav" />
     <transition name="fade">
       <router-view class="content" />
     </transition>
@@ -32,6 +32,7 @@ export default {
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 body {
   /* Background image from Toptal Subtle Patterns */
@@ -43,18 +44,49 @@ body {
   font-size: 32px;
   color: $color-white;
   padding: 0 $page-gutter;
+  position: relative;
   ::selection {
     background: $color-theme-tertiary;
   }
-}
-.content {
-  font-size: 24px;
-  max-width: 800px;
-  .content-heading {
-    font-weight: 400;
-    font-size: 32px;
-    color: $color-theme-primary;
-    text-transform: uppercase;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "content content"
+    "background nav";
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 100%;
+  padding-bottom: 1.5em;
+  box-sizing: border-box;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+  @media (min-width: 1024px) {
+    width: 67%;
+  }
+
+  .background {
+    grid-area: background;
+    overflow: visible;
+    align-self: end;
+  }
+  .nav {
+    grid-area: nav;
+    align-self: end;
+  }
+  .content {
+    grid-area: content;
+    font-size: 24px;
+    max-width: 800px;
+    .content-heading {
+      font-weight: 400;
+      font-size: 32px;
+      color: $color-theme-primary;
+      text-transform: uppercase;
+    }
   }
 }
 

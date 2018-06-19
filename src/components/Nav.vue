@@ -29,9 +29,6 @@ export default {
 @import "../styles/vars";
 
 #nav {
-  position: absolute;
-  right: $page-gutter;
-  bottom: $page-gutter;
   text-align: right;
 
   ul {
