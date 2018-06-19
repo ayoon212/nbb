@@ -79,7 +79,6 @@ body {
   }
   .content {
     grid-area: content;
-    max-width: 800px;
     .content-heading {
       color: $color-theme-primary;
       font-weight: 400;
@@ -96,6 +95,9 @@ ul.list-plain {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.bold {
+  font-weight: 400;
 }
 
 
