@@ -1,6 +1,6 @@
 // Variables
 $page-gutter: 48px;
-$transition-duration: 0.3s;
+$transition-duration: 0.15s;
 
 // Breakpoints
 $break-phone-md: 375px;
@@ -15,10 +15,13 @@ $font-default: "Quicksand", sans-serif;
 $color-white: #fff;
 $color-soft-cyan: #44d9cd;
 $color-soft-pink: #d9449b;
+$color-soft-pink-light: rgba(217,68,155,0.6);
 $color-soft-orange: #d98344;
+$color-light-gray: rgba(115,142,139,0.3);
 
 $color-theme-primary: $color-soft-cyan;
 $color-theme-secondary: $color-soft-pink;
+$color-theme-secondary-light: $color-soft-pink-light;
 $color-theme-tertiary: $color-soft-orange;
 
 /* https://www.websitebuilderexpert.com/pick-best-font-style-for-website/

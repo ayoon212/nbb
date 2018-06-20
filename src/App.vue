@@ -4,7 +4,7 @@
     <Record />
     <Nav class="nav" />
     <transition name="fade">
-      <router-view class="content" />
+      <router-view class="content" v-if="contentIsVisible" />
     </transition>
   </div>
 </template>
@@ -22,6 +22,14 @@ export default {
     Home,
     Nav,
     Record
+  },
+  data() {
+    return {
+      contentIsVisible: false
+    }
+  },
+  mounted() {
+    setTimeout(() => this.contentIsVisible = true, 2400);
   }
 }
 </script>
@@ -79,7 +87,6 @@ body {
   }
   .content {
     grid-area: content;
-    max-width: 800px;
     .content-heading {
       color: $color-theme-primary;
       font-weight: 400;
@@ -90,12 +97,32 @@ body {
       }
     }
   }
+  .main-copy {
+    @media (min-width: $break-laptop-lg) {
+      padding-right: 8em;
+    }
+  }
 }
 
+/*
+ * Utility classes
+ */
 ul.list-plain {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.accent-primary {
+  color: $color-theme-primary;
+}
+.accent-secondary {
+  color: $color-theme-secondary;
+}
+.bold {
+  font-weight: 400;
+}
+.hidden {
+  display: none;
 }
 
 
@@ -105,10 +132,12 @@ ul.list-plain {
 .fade-enter-active {
   position: absolute;
   transition: opacity $transition-duration ease-in;
+  width: 100%;
 }
 .fade-leave-active {
   position: absolute;
   transition: opacity $transition-duration ease-out;
+  width: 100%;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;

@@ -2,6 +2,7 @@
   <div>
     <!-- SEO? -->
     <h1 class="hidden">No Bathroom Breaks</h1>
+    <router-link to="/credits" class="sly-link" title="Credits"></router-link>
 
     <transition name="bg-fade">
       <div id="background" v-if="isVisible">
@@ -32,8 +33,19 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/vars";
 
-.hidden {
-  display: none;
+.sly-link {
+  position: absolute;
+  top: calc(50% - 0.33em);
+  left: calc(50% - 0.33em);
+  z-index: 1;
+  cursor: pointer;
+  height: 0.66em;
+  width: 0.66em;
+  border-radius: 0.33em;
+  transition: background-color $transition-duration;
+  &:hover {
+    background-color: rgba(255,255,255,0.3);
+  }
 }
 
 #background {
