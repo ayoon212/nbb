@@ -97,8 +97,16 @@ body {
       }
     }
   }
+  .main-copy {
+    @media (min-width: $break-laptop-lg) {
+      padding-right: 8em;
+    }
+  }
 }
 
+/*
+ * Utility classes
+ */
 ul.list-plain {
   list-style: none;
   margin: 0;

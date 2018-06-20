@@ -20,11 +20,6 @@
 @import "../styles/vars";
 
 #about {
-  .main-copy {
-    @media (min-width: $break-laptop-lg) {
-      padding-right: 6em;
-    }
-  }
   ul {
     display: flex;
     justify-content: space-between;
