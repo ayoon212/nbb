@@ -112,8 +112,17 @@ ul.list-plain {
   margin: 0;
   padding: 0;
 }
+.accent-primary {
+  color: $color-theme-primary;
+}
+.accent-secondary {
+  color: $color-theme-secondary;
+}
 .bold {
   font-weight: 400;
+}
+.hidden {
+  display: none;
 }
 
 

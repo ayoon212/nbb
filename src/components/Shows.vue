@@ -15,23 +15,19 @@
 @import "../styles/vars";
 
 #shows {
-  a {
-    color: $color-white;
-  }
-  li {
-    color: $color-theme-primary;
-    span {
+  ul {
+    a {
       color: $color-white;
+    }
+    li {
+      color: $color-theme-primary;
+      span {
+        color: $color-white;
+      }
     }
   }
   .booking-cta {
     margin-top: 3em;
-  }
-  .accent-primary {
-    color: $color-theme-primary;
-  }
-  .accent-secondary {
-    color: $color-theme-secondary;
   }
 }
 </style>
