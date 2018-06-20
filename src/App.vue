@@ -4,7 +4,7 @@
     <Record />
     <Nav class="nav" />
     <transition name="fade">
-      <router-view class="content" />
+      <router-view class="content" v-if="contentIsVisible" />
     </transition>
   </div>
 </template>
@@ -22,6 +22,14 @@ export default {
     Home,
     Nav,
     Record
+  },
+  data() {
+    return {
+      contentIsVisible: false
+    }
+  },
+  mounted() {
+    setTimeout(() => this.contentIsVisible = true, 2400);
   }
 }
 </script>
