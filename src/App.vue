@@ -115,10 +115,12 @@ ul.list-plain {
 .fade-enter-active {
   position: absolute;
   transition: opacity $transition-duration ease-in;
+  width: 100%;
 }
 .fade-leave-active {
   position: absolute;
   transition: opacity $transition-duration ease-out;
+  width: 100%;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
