@@ -79,24 +79,24 @@ export default {
 
 .nav-fade-enter li, .nav-fade-leave-to li {
   opacity: 0;
-  transform: translateX(-25%);
+  transform: translateX(-10%);
 }
 .list-plain > li {
   transition: opacity 1s ease-out, transform 0.6s ease-out;
   &:first-child {
-    transition-delay: 1.7s;
+    transition-delay: 1.1s;
   }
   &:nth-child(2) {
-    transition-delay: 1.78s;
+    transition-delay: 1.18s;
   }
   &:nth-child(3) {
-    transition-delay: 1.86s;
+    transition-delay: 1.26s;
   }
   &:nth-child(4) {
-    transition-delay: 1.94s;
+    transition-delay: 1.34s;
   }
   &:nth-child(5) {
-    transition-delay: 2.02s;
+    transition-delay: 1.42s;
   }
 }
 </style>

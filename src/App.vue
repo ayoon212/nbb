@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted() {
-    setTimeout(() => this.contentIsVisible = true, 2400);
+    setTimeout(() => this.contentIsVisible = true, 1000);
   }
 }
 </script>
@@ -131,12 +131,12 @@ ul.list-plain {
  */
 .fade-enter-active {
   position: absolute;
-  transition: opacity $transition-duration ease-in;
+  transition: opacity $transition-duration*2.5 ease-in;
   width: 100%;
 }
 .fade-leave-active {
   position: absolute;
-  transition: opacity $transition-duration ease-out;
+  transition: opacity $transition-duration*2.5 ease-out;
   width: 100%;
 }
 .fade-enter, .fade-leave-to {

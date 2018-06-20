@@ -86,17 +86,17 @@ export default {
 }
 
 .first {
-  transition: opacity 1.8s ease 0.15s;
+  transition: opacity 1.2s ease;
 }
 .second {
-  transition: opacity 2.2s ease 0.5s;
+  transition: opacity 1.5s ease 0.3s;
 }
 .third {
-  transition: opacity 1.6s ease 1s;
+  transition: opacity 1.2s ease 0.6s;
 }
 .fourth {
   display: inline-block;
-  transition: opacity 1s ease-out 1.5s, transform 0.6s ease-out 1.5s;
+  transition: opacity 1s ease-out 1.1s, transform 0.6s ease-out 1.1s;
 }
 .bg-fade-enter .first, .bg-fade-leave-to .first,
 .bg-fade-enter .second, .bg-fade-leave-to .second,
