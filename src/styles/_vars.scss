@@ -1,0 +1,38 @@
+// Variables
+$page-gutter: 48px;
+$transition-duration: 0.15s;
+
+// Breakpoints
+$break-phone-md: 375px;
+$break-phone-lg: 425px;
+$break-tablet: 768px;
+$break-laptop: 1024px;
+$break-laptop-lg: 1440px;
+
+$font-default: "Quicksand", sans-serif;
+
+// Color definitions
+$color-white: #fff;
+$color-soft-cyan: #44d9cd;
+$color-soft-pink: #d9449b;
+$color-soft-pink-light: rgba(217,68,155,0.6);
+$color-soft-orange: #d98344;
+$color-light-gray: rgba(115,142,139,0.3);
+$color-dark-gray: #5b706e;
+
+$color-theme-primary: $color-soft-cyan;
+$color-theme-secondary: $color-soft-pink;
+$color-theme-secondary-light: $color-soft-pink-light;
+$color-theme-tertiary: $color-soft-orange;
+
+/* https://www.websitebuilderexpert.com/pick-best-font-style-for-website/
+ * Recommended Font Sizes: 8, 16, 24, 32, 48, 64, 95
+ */
+$font-size-xs: 8px;
+$font-size-sm: 16px;
+$font-size-md: 24px;
+$font-size-lg: 32px;
+$font-size-xl: 48px;
+$font-size-xxl: 64px;
+$font-size-huge: 78px;
+
