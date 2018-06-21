@@ -6,7 +6,7 @@
     </ul>
     <div class="booking-cta">
       <p class="accent-primary bold">Want to book us for your show?</p>
-      <p>Please <a class="accent-secondary bold" href="https://www.facebook.com/No-Bathroom-Breaks-246682152550445/">contact us</a> over on Facebook.</p>
+      <p>Please <a class="accent-secondary bold" href="https://www.facebook.com/No-Bathroom-Breaks-246682152550445/">contact us</a> on Facebook.</p>
     </div>
   </div>
 </template>
