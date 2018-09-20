@@ -71,7 +71,7 @@ body {
   }
 
   color: $color-white;
-  text-shadow: 1px 1px 1px $color-dark-gray;
+  text-shadow: 0 0 1px $color-dark-gray;
   position: relative;
   ::selection {
     background: $color-theme-tertiary;

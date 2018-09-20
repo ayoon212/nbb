@@ -2,7 +2,7 @@
   <div class="record">
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" :class="backgroundClass">
       <!-- <circle cx="50" cy="50" r="50" fill="rgba(91, 112, 110, 0.4)" /> -->
-      <circle cx="50" cy="50" r="1" fill="rgba(0, 0, 0, 0.4)" />
+      <!-- <circle cx="50" cy="50" r="1" fill="rgba(0, 0, 0, 0.4)" /> -->
     </svg>
   </div>
 </template>
