@@ -36,6 +36,7 @@ export default {
 @import "../styles/vars";
 
 #nav {
+  z-index: 1;
   text-align: right;
   @media (min-width: $break-phone-md) {
     font-size: $font-size-md;

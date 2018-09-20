@@ -2,7 +2,7 @@
   <div id="shows">
     <p class="content-heading">Upcoming shows</p>
     <ul>
-      <li><span>6/24 - <a href="https://www.facebook.com/events/567940043576871/">Ashley's on 4th</a> - Long Beach, CA</span></li>
+      <li><span>9/20 - Slidebar Rock n' Roll Kitchen - Fullerton, CA</span></li>
     </ul>
     <div class="booking-cta">
       <p class="accent-primary bold">Want to book us for your show?</p>
