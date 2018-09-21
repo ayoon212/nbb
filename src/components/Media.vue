@@ -55,13 +55,18 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
   img {
     // absolute to make it work with existing fade animation
     position: absolute;
+    top: 0;
     transform: translateX(-50%);
     max-width: 100%;
-    max-height: 60%;
+    max-height: 120%;
+    cursor: pointer;
   }
 }
 </style>
