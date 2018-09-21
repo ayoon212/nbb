@@ -55,6 +55,7 @@ export default {
 
 .cta-container {
   text-align: center;
+  margin-top: 2em;
   .cta {
     background-color: $color-theme-secondary;
     border: none;

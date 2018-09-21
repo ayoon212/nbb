@@ -35,9 +35,9 @@ export default {
 
 .sly-link {
   position: absolute;
-  top: calc(50% - 0.33em);
-  left: calc(50% - 0.33em);
-  z-index: 1;
+  top: 0.33em;
+  left: 0.33em;
+  z-index: 0;
   cursor: pointer;
   height: 0.66em;
   width: 0.66em;

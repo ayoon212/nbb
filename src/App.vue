@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Background class="background" />
-    <Record />
+    <Record :route="$route.path" />
     <Nav class="nav" />
     <transition name="fade">
       <router-view class="content" v-if="contentIsVisible" />
@@ -71,6 +71,7 @@ body {
   }
 
   color: $color-white;
+  text-shadow: 0 0 1px $color-dark-gray;
   position: relative;
   ::selection {
     background: $color-theme-tertiary;
@@ -80,6 +81,7 @@ body {
     grid-area: background;
     overflow: visible;
     align-self: end;
+    z-index: 1;
   }
   .nav {
     grid-area: nav;
@@ -132,12 +134,10 @@ ul.list-plain {
 .fade-enter-active {
   position: absolute;
   transition: opacity $transition-duration*2.5 ease-in;
-  width: 100%;
 }
 .fade-leave-active {
   position: absolute;
   transition: opacity $transition-duration*2.5 ease-out;
-  width: 100%;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
